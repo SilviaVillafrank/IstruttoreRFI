@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="provatrainingsceltascenario.css">
+    <script src="https://kit.fontawesome.com/f593a5b11e.js" crossorigin="anonymous"></script>
+    <title>Training</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li class="logo-container">
+                <img src="img\RFI.JPG" alt="logo">
+            </li>
+            <li class="voce"><i class="fa-solid fa-house"></i> &nbsp;HOME</li>
+                <li class="voce" onclick="redirectToUtenti()"> <i class="fa-solid fa-user"></i> &nbsp;UTENTI</li>
+            <li class="voce"> <i class="fa-solid fa-wrench"></i> &nbsp;TRAINING</li>
+            <li class="voce" onclick="redirectToExam()"> <i class="fa-solid fa-book"></i> &nbsp;EXAM</li>
+            <form id="loginreturn" method="post" onclick="redirectToDashboard()">
+                <li class="voce" id="Logout"><i class="fa-regular fa-user"></i> &nbsp;Logout</li>
+            </form>
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h2>TRAINING</h2>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th class="cella">Indice</th>
+                    <th class="cella">Stato</th>
+                </tr>
+                <tr>
+                    <td onclick="redirectToes1()">Scenario 1</td>
+                    <td><span class="status-dot"></span></td>
+                </tr>
+                <tr>
+                    <td>Scenario 2</td>
+                    <td><span class="status-dot"></span></td>
+                </tr>
+                <tr>
+                    <td>Scenario 3</td>
+                    <td><span class="status-dot"></span></td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="provatrainingsceltascenario.js"></script>
+</body>
+
+</html>

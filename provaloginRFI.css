@@ -1,0 +1,91 @@
+/* Stile per il body */
+body {
+    background-color: #f4f4f4;
+    font-family: Bold,sans-serif;
+}
+
+/* Stile per il container del form */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 150px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Stile per il logo */
+.text-center img {
+    max-width: 200px;
+}
+
+#custom-logo {
+    /* Imposta la posizione del logo come desiderato */
+    position: absolute;
+    top: -100px; /* Regola la distanza dalla parte superiore */
+    left: -30px; /* Regola la distanza dalla sinistra */
+}
+
+
+/* Stile per il pulsante "Accedi" */
+
+button.btn.btn-primary.btn-block {
+    background-color: #2C2C2C; /* Cambia il colore di sfondo del pulsante */
+    /* Aggiungi altri stili personalizzati se necessario */
+    border: none;
+}
+
+
+.btn-primary:hover {
+    background-color: #888888 !important;
+}
+
+/* Personalizza la larghezza dell'elemento form-group */
+.form-group {
+    width: 250%; /* Imposta la larghezza desiderata, ad esempio 80% della larghezza del container */
+    margin: 0 auto; /* Centra l'elemento orizzontalmente nel container */
+    margin-top: 30px; /* Regola la distanza dalla parte superiore del form */
+    margin-left: -75px; /* Imposta la distanza dalla sinistra */
+}
+
+/* Stile per l'icona "vedi" nel pulsante della password */
+#togglePasswordButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* Stile per l'input del numero di matricola */
+#matricola {
+    border-radius: 5px;
+}
+
+/* Stile per l'input della password */
+#password {
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Stile per l'icona "vedi" nell'input della password */
+.togglePassword  {
+    position: initial;
+    width: 60%;
+    display: block;
+    color: #666;
+}
+
+/* Stile per il pulsante "Accedi" */
+.btn-block {
+    margin-top: -110px;
+    width: 10%; 
+    margin-left: auto; /* Imposta la distanza dalla sinistra */
+    margin-right: auto;
+}   
+
+#accedi-error{
+    margin-left: auto; /* Imposta la distanza dalla sinistra */
+    margin-right: auto;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="provaaggiungimatricola.css">
+    <script src="https://kit.fontawesome.com/f593a5b11e.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    
+    <div class="sidebar">
+        <ul>
+            <li class="logo-container">
+                <img src="img\RFI.JPG" alt="logo">
+            </li>
+            <li class="voce"><i class="fa-solid fa-house"></i> &nbsp;HOME</li>
+            <li class="voce"> <i class="fa-solid fa-user"></i> &nbsp;UTENTI</li>
+            <li class="voce" onclick="redirectToTraining()"> <i class="fa-solid fa-wrench"></i> &nbsp;TRAINING</li>
+            <li class="voce" onclick="redirectToExam()"> <i class="fa-solid fa-book"></i> &nbsp;EXAM</li>
+            <form id="loginreturn" method="post" onclick="redirectToDashboard()">
+                <li class="voce" id="Logout"><i class="fa-regular fa-user" id="logout-icon"></i> &nbsp;Logout</li>
+                <a href="LoginRFI.html?resetTableFlag=true" id="hidden-logout-link" style="color: transparent; background-color: transparent; text-decoration: none;"></a>
+            </form>
+        </ul>
+    </div>
+    <div class="content">
+        <header>
+            <h2>UTENTI</h2>
+            <!-- Dialogo per l'aggiunta dell'utente -->
+            <dialog id="addUserDialog">
+                <form onsubmit="addUser(); return false;">
+                    <label class = "finestra" for="matricola">Matricola:</label>
+                    <input type="text" id="matricola" required><br><br>
+                    <span id="matricola-error" class="error-message" style="color:#CD0033;"></span><br>
+        
+                    <label class = "finestra" for="nome">Nome:</label>
+                    <input type="text" id="nome" required><br><br>
+                    <span id="nome-error" class="error-message" style="color:#CD0033;"></span><br>
+        
+                    <button class = "btnfinestra" id="btnfutente" type="submit">Aggiungi Utente</button>
+                    <button class = "btnfinestra" type="button" onclick="closeAddUserDialog()">Annulla</button>
+                </form>
+            </dialog>
+            <button class="add-user-btn" onclick="openAddUserDialog()"> <i class="fa-solid fa-plus"></i> &nbsp; Aggiungi
+                Utente</button>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th class = "cella">Matricola</th>
+                    <th class = "cella">Nome</th>
+                    <th class = "cella">Stato</th>
+                    <th class = "cella">Rimuovi</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="provaaggiungimatricola.js"></script>
+</body>
+
+</html>
