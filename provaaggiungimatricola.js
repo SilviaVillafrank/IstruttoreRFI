@@ -73,7 +73,7 @@ function removeUser(buttonElement) {
 
 function redirectToDashboard() {
     // Verifica se sei sulla pagina del login
-    if (window.location.href.endsWith("LoginRFI.html")) {
+    if (window.location.href.endsWith("index.html")) {
         // Verifica il valore del campo nascosto
         const resetTableFlag = document.getElementById("resetTableFlag");
         if (resetTableFlag && resetTableFlag.value === "true") {
@@ -97,7 +97,7 @@ function redirectToDashboard() {
     }
 
     // Effettua il reindirizzamento alla pagina di destinazione
-    window.location.href = "LoginRFI.html";
+    window.location.href = "index.html";
 }
 
 

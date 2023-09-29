@@ -68,7 +68,7 @@ function removeUser(buttonElement) {
 
 function redirectToDashboard() {
     // Effettua il reindirizzamento alla pagina di destinazione
-    window.location.href = "LoginRFI.html";
+    window.location.href = "index.html";
 }
 
 document.getElementById('loginreturn').addEventListener("click", function(e) {
